@@ -7,6 +7,11 @@ Robocon2023吴哥之花，风暴战队NCIST创新实验室大象机器人电控�
 | 文件夹    | 来源   | 内容                                |
 | --------- | ------ | ----------------------------------- |
 | Core | CubeMX | CubeMX生成源文件 |
+| Drivers | CubeMX | stm32硬件驱动库 |
+| MDK-ARM | CubeMX | MDK编译器配置编译文件 |
+| Middlewares | CubeMX | 中间层第三方库文件 |
+| User | 开发者 | 用户源代码 |
+
   User/Apps    系统应用层文件：负责系统任务，变量数据的使用和调配  
   User/BSP    板级支持包：主控板载资源底层驱动，无需更改  
   User/Drivers  外设驱动：外设模块的驱动文件
