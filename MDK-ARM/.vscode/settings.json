@@ -1,0 +1,14 @@
+{
+  "files.associations": {
+    "drv_dr16.h": "c",
+    "mod_chassis.h": "c",
+    "system_datapool.h": "c",
+    "bsp_timer.h": "c",
+    "drv_ps2.h": "c",
+    "system.h": "c",
+    "drv_motor.h": "c",
+    "drv_minipc.h": "c",
+    "drv_bluetooth.h": "c",
+    "stdint.h": "c"
+  }
+}
