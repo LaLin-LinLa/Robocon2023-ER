@@ -1,3 +1,32 @@
+/**
+  ******************************************************************************
+  * @file    bsp_can.c/h
+  * @brief   Code for CAN driver in STM32 series MCU, supported packaged:
+	*          - STM32Cube_FW_F4_V1.27.1.
+	*          - STM32Cube_FW_F4_V1.24.0.
+  *          - STM32Cube_FW_F1_V1.8.0.
+  *          - STM32Cube_FW_H7_V1.5.0.		 
+	@verbatim  V1.2
+	===================================================================      
+									##### How to use this driver #####
+	=================================================================== 
+    @note
+      -# 调用bsp_can_Init，初始化CAN,设置CAN接收处理函数的指针。
+			-# 如需接收can中的消息，需调用CAN_Filter_Mask_Config配置滤波器（需注意配置格式）
+      -# 使用CANx_SendData发送标准帧数据
+      -# 使用CANx_SendExtData发送扩展帧数据
+    @attention
+      -# 本模块只能保存一条来自于同一个FIFO的消息(详细见下方HAL库FIFOx中断的实现),请注意及时读走消息。
+			-# 本模块仅支持HAL库
+  ******************************************************************************
+  * @attention
+  * 
+  * if you had modified this file, please make sure your code does not have any 
+  * bugs, update the version Number, write dowm your name and the date. The most
+  * important thing is make sure the users will have clear and definite under-
+  * standing through your new brief.
+  ******************************************************************************
+*/
 #include "bsp_can.h"
 
 static void (*pCAN1_RxCpltCallback)(CAN_RxBuffer *);
